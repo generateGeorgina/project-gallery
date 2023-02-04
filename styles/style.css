@@ -1,6 +1,23 @@
+html {
+    font-family: 'Kalam', cursive; /*cursive is the font's fallback value*/
+    font-family: 'Montserrat Alternates', sans-serif; 
+}
 img {
-    width: 150px;
+    width: 170px;
+}
+h2 {
+    font-size: 22px;
 }
 #flex {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center; /* center along 'main' axis (which is vertical atm) */
+    align-content: center; /* center along 'cross' axis (which is horizontal atm) */
+}
+.clickableA {
+    display: none;
+}
+button {
+    display: block;
 }
