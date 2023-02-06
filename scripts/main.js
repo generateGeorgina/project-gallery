@@ -1,12 +1,12 @@
-function clickedA1() {
+function clickedA(descriptionA) {
     // get the button
-    var myDescription = document.getElementById('clickableA');
+    var myDescription = document.getElementById('descriptionA');
     
     // get the current value of the b
     var displaySetting = myDescription.style.display;
     
     // also get the clock button, so we can change what it says
-    var myButton = document.getElementById('clickable1')
+    var myButton = document.getElementById('buttonA')
 
     // now toggle the description and button text, depending on the current state
     if (displaySetting == 'block') {
