@@ -1,4 +1,6 @@
-function clickedA(descriptionA) {
+
+
+function clickedA() {
     // get the button
     var myDescription = document.getElementById('descriptionA');
     

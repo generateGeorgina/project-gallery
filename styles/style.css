@@ -5,6 +5,7 @@ html {
 }
 img {
     width: 170px;
+    border-radius: 25px;
 }
 h2 {
     font-size: 22px;
