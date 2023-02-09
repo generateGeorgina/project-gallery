@@ -1,27 +1,50 @@
 html {
-    font-family: 'Kalam', cursive; /*cursive is the font's fallback value*/
-    font-family: 'Montserrat Alternates', sans-serif;
-    background-color: white; 
+    font-family: 'Lato', sans-serif; /*cursive is the font's fallback value*/
+    background-color: rgb(142, 164, 185); 
+    color: rgb(24, 24, 39);
 }
 img {
-    width: 170px;
+    width: 100%;
+    min-width: 170px;
     border-radius: 25px;
+    margin-bottom: 5px;
 }
 h2 {
     font-size: 22px;
+    margin-top: 0;
+}
+p {
+    width: 100%;
+    min-width: 170px;
 }
 #flex {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* must be included for flex: 100% for different media sizes */
     justify-content: space-around;
-    align-items: center; /* center along 'main' axis (which is vertical atm) */
+    align-items: start; /* to the top - along 'main' axis (which is vertical atm) */
     align-content: center; /* center along 'cross' axis (which is horizontal atm) */
-    background-color: 	#89cff0;
+    background-color: 	#6f8c9a;
     border-radius: 25px;
 }
-#descriptionA {
+
+section {
+    padding: 20px;
+    flex: 10% /*resize cards*/;
+    /* border:rgb(24, 24, 39) solid 1px; - to test cards resizing */
+}
+@media (max-width: 800px) {
+    section {
+        flex: 100%; /* for smaller screens (can also use flex-direction:column) */
+    }
+}
+#descriptionA, #descriptionB, #descriptionC, #descriptionD, #descriptionE {
     display: none;
 }
 button {
     display: block;
+    color:rgb(24, 24, 39);
+    background-color: rgb(142, 164, 185);
+    border-radius: 25px;
+    border-color: black;
+    border-style: double;
 }
